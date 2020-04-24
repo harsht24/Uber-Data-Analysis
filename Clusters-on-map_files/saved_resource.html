@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)http://localhost:8888/notebooks/Documents/GitHub/Uber-Data-Analysis/Untitled.ipynb?kernel_name=python3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="./leaflet.js.download"></script>
+    <script src="./jquery-1.12.4.min.js.download"></script>
+    <script src="./bootstrap.min.js.download"></script>
+    <script src="./leaflet.awesome-markers.js.download"></script>
+    <link rel="stylesheet" href="./leaflet.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="./leaflet.awesome.rotate.css">
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <style>
+                #map_acfa1792315a4d019d5ac53d9e5a4a9d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body class="">    
+    
+            <div class="folium-map leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="map_acfa1792315a4d019d5ac53d9e5a4a9d" tabindex="0" style="outline: none;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-16.0108px, -32px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(72px, -18px, 0px) scale(0.5);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(276px, 165px, 0px) scale(1);"><img alt="" role="presentation" src="./768.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(169px, -262px, 0px); opacity: 1;"><img alt="" role="presentation" src="./769.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(169px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./768(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-87px, -262px, 0px); opacity: 1;"><img alt="" role="presentation" src="./768(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(425px, -262px, 0px); opacity: 1;"><img alt="" role="presentation" src="./769(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-87px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./769(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(425px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./770.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(169px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./770(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-87px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./770(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(425px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./769(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-343px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./769(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(681px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./768(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-343px, -262px, 0px); opacity: 1;"><img alt="" role="presentation" src="./768(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(681px, -262px, 0px); opacity: 1;"><img alt="" role="presentation" src="./770(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-343px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./770(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(681px, 250px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(490px, 316px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(157px, 441px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(501px, 464px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(642px, 253px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(780px, 520px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(453px, 382px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="./marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(490px, 316px, 0px); z-index: 316;"><img src="./marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(157px, 441px, 0px); z-index: 441;"><img src="./marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(501px, 464px, 0px); z-index: 464;"><img src="./marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(642px, 253px, 0px); z-index: 253;"><img src="./marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(780px, 520px, 0px); z-index: 520;"><img src="./marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(453px, 382px, 0px); z-index: 382;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(154431px, 197032px, 0px) scale(1024);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://localhost:8888/notebooks/Documents/GitHub/Uber-Data-Analysis/Untitled.ipynb?kernel_name=python3#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://localhost:8888/notebooks/Documents/GitHub/Uber-Data-Analysis/Untitled.ipynb?kernel_name=python3#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Data by © <a href="http://openstreetmap.org/">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.</div></div></div></div>
+        
+
+<script>    
+    
+            var map_acfa1792315a4d019d5ac53d9e5a4a9d = L.map(
+                "map_acfa1792315a4d019d5ac53d9e5a4a9d",
+                {
+                    center: [40.79658011772687, -73.87341741832425],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c8eea7f92d54e8ca94b8d627d40d3cb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_acfa1792315a4d019d5ac53d9e5a4a9d);
+        
+    
+            var marker_ffd743ae20f843069b5925384412774a = L.marker(
+                [40.76555831002299, -73.972817799411],
+                {}
+            ).addTo(map_acfa1792315a4d019d5ac53d9e5a4a9d);
+        
+    
+        var popup_d3b6e069f845468aaea60745baf1377a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae674a627a554f9b95bd92a6a59ce4b6 = $(`<div id="html_ae674a627a554f9b95bd92a6a59ce4b6" style="width: 100.0%; height: 100.0%;">[40.76555831002299, -73.972817799411]</div>`)[0];
+            popup_d3b6e069f845468aaea60745baf1377a.setContent(html_ae674a627a554f9b95bd92a6a59ce4b6);
+        
+
+        marker_ffd743ae20f843069b5925384412774a.bindPopup(popup_d3b6e069f845468aaea60745baf1377a)
+        ;
+
+        
+    
+    
+            var marker_bd1375f58d2a48c5a38f4447903fa0c0 = L.marker(
+                [40.70054140415895, -74.20167302861849],
+                {}
+            ).addTo(map_acfa1792315a4d019d5ac53d9e5a4a9d);
+        
+    
+        var popup_fc071ac294c640029927f3e7da557330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b0435870fe7433886b0d01c73d0c231 = $(`<div id="html_3b0435870fe7433886b0d01c73d0c231" style="width: 100.0%; height: 100.0%;">[40.70054140415895, -74.20167302861849]</div>`)[0];
+            popup_fc071ac294c640029927f3e7da557330.setContent(html_3b0435870fe7433886b0d01c73d0c231);
+        
+
+        marker_bd1375f58d2a48c5a38f4447903fa0c0.bindPopup(popup_fc071ac294c640029927f3e7da557330)
+        ;
+
+        
+    
+    
+            var marker_d705cd216eec48b98d7244aeb43ab411 = L.marker(
+                [40.68860278398665, -73.96555040867389],
+                {}
+            ).addTo(map_acfa1792315a4d019d5ac53d9e5a4a9d);
+        
+    
+        var popup_adf978f1b39e4075810600d438b8534b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e918c930a63245b9b3f6343fe61d05b9 = $(`<div id="html_e918c930a63245b9b3f6343fe61d05b9" style="width: 100.0%; height: 100.0%;">[40.68860278398665, -73.96555040867389]</div>`)[0];
+            popup_adf978f1b39e4075810600d438b8534b.setContent(html_e918c930a63245b9b3f6343fe61d05b9);
+        
+
+        marker_d705cd216eec48b98d7244aeb43ab411.bindPopup(popup_adf978f1b39e4075810600d438b8534b)
+        ;
+
+        
+    
+    
+            var marker_9cfb978d81914dab9d5e7393e7b9656a = L.marker(
+                [40.798083507525085, -73.868799493102],
+                {}
+            ).addTo(map_acfa1792315a4d019d5ac53d9e5a4a9d);
+        
+    
+        var popup_1aca6a30dd8c45979671d9a91e631d61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_925ea01c379e482c95ced89ca4b0db66 = $(`<div id="html_925ea01c379e482c95ced89ca4b0db66" style="width: 100.0%; height: 100.0%;">[40.798083507525085, -73.868799493102]</div>`)[0];
+            popup_1aca6a30dd8c45979671d9a91e631d61.setContent(html_925ea01c379e482c95ced89ca4b0db66);
+        
+
+        marker_9cfb978d81914dab9d5e7393e7b9656a.bindPopup(popup_1aca6a30dd8c45979671d9a91e631d61)
+        ;
+
+        
+    
+    
+            var marker_c2539db9f1f54093adfe14a3baa38897 = L.marker(
+                [40.65952565241532, -73.77407209883398],
+                {}
+            ).addTo(map_acfa1792315a4d019d5ac53d9e5a4a9d);
+        
+    
+        var popup_7e4fcb2829be494fa4ddbdacf4c2fdc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c269801cd6848c39a16e176985154fd = $(`<div id="html_4c269801cd6848c39a16e176985154fd" style="width: 100.0%; height: 100.0%;">[40.65952565241532, -73.77407209883398]</div>`)[0];
+            popup_7e4fcb2829be494fa4ddbdacf4c2fdc8.setContent(html_4c269801cd6848c39a16e176985154fd);
+        
+
+        marker_c2539db9f1f54093adfe14a3baa38897.bindPopup(popup_7e4fcb2829be494fa4ddbdacf4c2fdc8)
+        ;
+
+        
+    
+    
+            var marker_9efeae76ab654d31a13464faec444bdb = L.marker(
+                [40.73113042965979, -73.9986097081231],
+                {}
+            ).addTo(map_acfa1792315a4d019d5ac53d9e5a4a9d);
+        
+    
+        var popup_8cba5afaeb024a33994c6ec28c68e4c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54979778ac494a6ca3a7ebcfc0c2a5c9 = $(`<div id="html_54979778ac494a6ca3a7ebcfc0c2a5c9" style="width: 100.0%; height: 100.0%;">[40.73113042965979, -73.9986097081231]</div>`)[0];
+            popup_8cba5afaeb024a33994c6ec28c68e4c2.setContent(html_54979778ac494a6ca3a7ebcfc0c2a5c9);
+        
+
+        marker_9efeae76ab654d31a13464faec444bdb.bindPopup(popup_8cba5afaeb024a33994c6ec28c68e4c2)
+        ;
+
+        
+    
+</script></body></html>

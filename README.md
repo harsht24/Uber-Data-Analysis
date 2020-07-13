@@ -1,5 +1,5 @@
 # Uber-Data-Analysis
-Data Analysis of Uber rides data of the month April 2014.
+Insights from Uber rides data of the month April 2014.
 
 ## Observations -
 * Most busy day was the last day of month (30 April 2014).
